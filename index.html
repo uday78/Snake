@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html class="layout flex">
+
+<head>
+
+  <meta charset="utf-8" lang="tr">
+
+  <meta name="author" content="serhat öcal">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="src/style/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/ecmascript" src="src/script/Client.js"></script>
+
+  <script type="text/ecmascript" src="src/script/Canvas.js"></script>
+
+  <script type="text/ecmascript" src="src/script/Snake.js"></script>
+
+
+
+</head>
+
+<body class="layout flex">
+
+  <section id="Game" class="layout flex light">
+
+    <div id="frontPanel" class="layout flex">
+
+      <div id="wellcome">
+
+        <section id="playerList">
+          <ul id="playlistContainer"></ul>
+        </section>
+        <h3></h3>
+
+        <footer id="footer">
+
+          <div id="input">
+
+            <input type="text" id="setName" placeholder="enter a name" maxlength="14" color=#808080>
+
+            <input id="start" type="button" value="START">
+
+            <h3>Adjust the snake speed </h3>
+
+          </div>
+
+          <div id="config">
+
+            <input type="range" min="1" max="20" value="5" class="sliderr" id="myRange">
+
+            <label class="switch">
+
+              <input id="togle" type="checkbox" checked>
+
+              <span class="slider round"></span>
+
+            </label>
+
+          </div>
+
+        </footer>
+
+      </div>
+
+    </div>
+
+    <canvas id="canvas" class="layout flex"></canvas>
+
+    <div id="backPanel" class="layout flex">
+
+      <h1 id="skor" class="hideSkor"></h1>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
